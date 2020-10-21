@@ -1,8 +1,7 @@
 <template>
   <button
     class="start-button"
-    @click="startGame"
-    :class="{displayNone: start}">
+    @click="startGame">
     Start game
   </button>
 </template>
@@ -31,9 +30,5 @@ export default {
   padding: 10px;
   margin-right: 50px;
   height: fit-content;
-}
-
-.displayNone {
-  display: none;
 }
 </style>

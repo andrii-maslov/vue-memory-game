@@ -32,8 +32,6 @@ export default {
           this.$el.innerHTML = this.items[this.$el.id];
           this.activeCards.push(this.$el.id);
           this.$emit('changeShownCards', this.shownCards + 1);
-          // console.log(this.shownCards)
-          console.log(this.activeCards)
         }
       }
     }

@@ -43,7 +43,6 @@ export default {
   },
   methods: {
     stopTimer() {
-      console.log('stop timer')
       this.$emit('gameStopped', false);
     }
   },
@@ -57,8 +56,6 @@ export default {
           cells.forEach(function(item) {
             item.innerHTML = '';
           });
-          // console.log(document.querySelectorAll('.game-cell'))
-          console.log('clear')
         }, 1000);
       }
     },
@@ -72,14 +69,6 @@ export default {
         this.activeCards = [];
       }
     },
-    completedCards() {
-      if (this.completedCards === 4) {
-
-        this.stopTimer();
-        // this.start = false;
-        console.log('Finish')
-      }
-    }
   }
 }
 </script>
